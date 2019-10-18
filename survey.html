@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Coffee Survey</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+<link href='cascading-style-sheet-practice1.css' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+<header>
+			<h1>All About Coffee</h1>
+			<nav>
+				<ul>
+					<li><a href='index.html'>Coffee Home</a></li>
+					<li><a href='roasting.html'>Roasting</a></li>
+					<li><a href='grinding.html'>Grinding</a></li>
+					<li><a href='brewing.html'>Brewing</a></li>
+					<li><a href='drinks.html'>Drinks</a></li>
+					<li><a href='survey.html'>Survey</a></li>
+				</ul>
+			</nav>
+</header>
+<h1>Coffee Survey</h1>
+<aside>
+<figure>
+<img src='images/espresso.jpg' alt='a cup of espresso' width='120px' height='120'>
+<figcaption>A cup of espresso</figcaption>
+</figure>
+</aside>
+<form action='submissions.php' method='post'>
+<fieldset>
+<legend>Personal Information</legend>
+Your Name</br>
+<input type='text' name='name' size='40' autofocus required/></br>
+Email Address</br>
+<input type='email' name='name' size='40' placeholder='Input your valid email address' required/>
+</br>
+</fieldset>
+<fieldset>
+<legend>Your Preferences</legend>
+Tell us your coffee preparation methods.</br>
+<textarea name='method' cols='40' rows='6'></textarea></br></br>
+Do you grind your own beans?</br>
+<input type='radio' name='grind' value='yes'/>yes
+<input type='radio' name='grind' value='no'/>no
+</br></br>
+How do you drink your coffee?</br>
+<input type='checkbox' name='drink-with' value='sugar'/>with sugar
+<input type='checkbox' name='drink-with' value='cream'/>with cream
+</br></br>
+What is your favorite coffee drink?</br>
+<select name='favorite'>
+<option value=''>please select a drink</option>
+<option value='drip'>drip coffee</option>
+<option value='french'>french press</option>
+<option value='espresso'>espresso</option>
+<option value='latte'>latte</option>
+<option value='flavored'>flavored</option>
+</select></br>
+</fieldset>
+<input type='submit' value='post'/>
+</br></br>
+</form>
+<a href='mailto:kay@gmail.com?subject=comment'> Contact Us</a>
+<footer>
+			<nav>
+				<ul>
+					<li><a href='index.html'>Coffee Home</a></li>
+					<li><a href='roasting.html'>Roasting</a></li>
+					<li><a href='grinding.html'>Grinding</a></li>
+					<li><a href='brewing.html'>Brewing</a></li>
+					<li><a href='drinks.html'>Drinks</a></li>
+					<li><a href='survey.html'>Survey</a></li>
+				</ul>
+			</nav>
+		</footer>
+</body>
+</html>
